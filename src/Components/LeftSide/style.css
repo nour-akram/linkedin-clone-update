@@ -1,0 +1,122 @@
+.contanier-leftside{
+   grid-area: "leftside";
+   background-color: white;
+   height:fit-content;
+}
+.contanier-leftside .cardImage{
+    background-image: url("/Images/card-bg.svg");
+    background-position: center;
+    background-size: 100%;
+    height: 55px;
+    border-radius: 5px 5px 0 0;
+}
+.contanier-leftside .userInfo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border:  solid 1.2px rgb(190, 190, 190);
+    border-top: none;
+    gap: 5px;
+    padding-bottom: 10px;
+    
+}
+.contanier-leftside .userInfo .userImage{
+    background-image: url("/Images/photo.svg");
+    background-size: 60%;
+    margin:-12% auto 5%;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+   background-color: white;
+   background-repeat: no-repeat;
+   background-position: center;
+}
+.contanier-leftside .userInfo p{
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+.contanier-leftside .userInfo span{
+    color: blue;
+    text-transform: capitalize;
+    font-size: 14px;
+    cursor: pointer;
+}
+.contanier-leftside .secondPart{
+ display: flex;
+ border:  solid 1.2px rgb(190, 190, 190);
+ border-top:none ;
+ justify-content: space-between;
+ padding: 10px 5px;
+}
+.contanier-leftside .secondPart:hover{
+    background-color: rgb(190, 190, 190);
+    cursor: pointer;
+}
+.contanier-leftside .secondPart .left{
+  font-size: 14px;
+}
+.contanier-leftside .secondPart .left p{
+    font-weight: 600;
+}
+.contanier-leftside .secondPart .left span{
+    font-weight: 600;
+    opacity: 0.6;
+}
+.contanier-leftside .thirdPart{
+    display: flex;
+    gap: 3px;
+    border:  solid 1.2px rgb(190, 190, 190);
+    border-top: none;
+    border-radius: 0 0 5px 5px;
+    padding: 10px 5px;
+}
+.contanier-leftside .thirdPart:hover,.contanier-leftside .fourthPart:hover,.contanier-leftside .lastPart:hover{
+    background-color: rgb(190, 190, 190);
+    cursor: pointer;
+}
+.contanier-leftside .thirdPart p{
+    font-weight: 600;
+    text-transform: capitalize;
+}
+.contanier-leftside .fourthPart{
+    display: flex;
+    border:  solid 1.2px rgb(190, 190, 190);
+    border-radius:  5px 5px 0 0; 
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 5px;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: capitalize;
+    margin-top: 10px;
+}
+.contanier-leftside .lastPart{
+    border:  solid 1.2px rgb(190, 190, 190);
+    border-top: none;
+    border-radius:  0 0 5px 5px; 
+    padding: 10px 5px;
+    font-size: 14px;
+    font-weight: 600;
+    opacity: 0.6;
+}
+
+@media (max-width: 1024px){
+    .contanier-leftside .userInfo p {
+        font-size: 16px;
+    }
+    .contanier-leftside .thirdPart p {
+        font-size: 15px;
+    }
+}
+@media (max-width: 991px){
+    .contanier-leftside .userInfo .userImage {
+        margin: -5% auto 0%;
+    }
+}
+
+@media (max-width: 768px){
+    /* .contanier-leftside .userInfo .userImage {
+        margin: -5% auto 0%;
+    } */
+}

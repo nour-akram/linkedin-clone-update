@@ -1,0 +1,17 @@
+.container-main{
+    grid-area: "main";
+    /* background-color: red; */
+}
+.noArticles,.container-main .loader{
+    /* background-color: white; */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+.noArticles img{
+    width: 40%;
+}
+.container-main .loader img{
+    width: 10%;
+}

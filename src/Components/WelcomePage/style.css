@@ -1,0 +1,232 @@
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.nav{
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    padding: 0 12px;
+    justify-content: space-between;
+    box-sizing: border-box;
+    flex-wrap: nowrap;
+    margin: 12px 0;
+}
+.nav .logo{
+    width: 12%;
+    cursor: pointer;
+}
+.nav .join{
+    display: flex;
+    align-items: baseline;
+    width: 45%;
+    gap: 10%;
+}
+.nav .join p{
+    color: gray;
+    padding: 10px;
+    opacity: 0.9;
+    font-size: 18px;
+}
+.nav .join p:hover{
+    background-color: rgb(206, 206, 206);
+    color: black;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.nav .join button{
+    background-color: transparent;
+    border: 1.5px solid rgb(10 102 194);
+    padding: 8px 25px;
+    color: rgb(10 102 194);
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: 10px;
+    
+}
+.nav .join button:hover{
+    background-color: rgb(10 102 194);
+    color: white;
+    cursor: pointer;
+    transition: 0.2s;
+}
+.section {
+    width: 85%;
+    display: flex;
+    flex-wrap: wrap;
+    /* padding: 0 45px; */
+    box-sizing: border-box;
+    margin: 40px auto;
+    /* background-color: aqua; */
+    height: 280px;
+}
+.section .hero{
+  width: 100%;
+  position: relative;
+  margin-bottom:60px;
+}
+.section .hero h1 {
+    width: 45%;
+    font-size: 42px;
+    color: rgb(10 102 194);
+    /* background-color: aqua; */
+    line-height: 50px;
+    font-weight: 500;
+}
+.section .hero img {
+    width: 480px;
+    height: 400px;
+    position: absolute;
+    top: 40px;
+    right: 0px;
+}
+.section .google {
+    border: 1.5px solid black;
+    width: 26%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 0;
+    gap: 5px;
+    cursor: pointer;
+    border-radius: 12px;
+    height: 20px;
+}
+@media (max-width: 1024px) {
+    .section .hero h1 {
+        width: 47%;
+        font-size: 38px;
+    }
+  }
+  @media (max-width: 991px) {
+    .section .hero h1 {
+        width: 49%;
+        font-size: 35px;
+    }
+    .section {
+        width: 92%;
+    }
+  }
+  @media (max-width: 768px) {
+    .nav .logo {
+        width: 15%;
+    }
+    .section {
+        width: 95%;
+    }
+    .section .hero h1 {
+        width: 45%;
+        font-size: 33px;
+    }
+    .section .hero img {
+        width: 450px;
+        height: 390px;
+    }
+  }
+  @media (max-width: 600px){
+    .nav .logo {
+        width: 18%;
+    }
+    .nav .join button {
+        padding: 8px 20px;
+        font-size: 12px;
+        font-weight: 500;
+    }
+
+    .section .hero h1 {
+        width: 100%;
+        font-size: 31px;
+        text-align: center;
+    }
+    .section .hero img {
+        width: 320px;
+        height: 350px;
+        top: 32%;
+        right: 18%;
+    }
+
+    .section {
+        height: 80vh;
+    }
+    .section .google {
+        width: 38%;
+        margin: auto;
+    }
+  }
+  @media (max-width: 430px){
+    .nav .logo {
+        width: 23%;
+    }
+    .nav .join p {
+        font-size: 15px;
+    }
+    .section .hero img {
+        height: 340px;
+        right: 10%;
+    }
+    .section .google {
+        width: 48%;
+        margin: auto;
+    }
+    .section .hero h1 {
+        font-size: 28px;
+    }
+  }
+  @media (max-width: 395px){
+    .section {
+        height: 95vh;
+    }
+    .nav .join {
+        width: 50%;
+    }
+    .nav .join p {
+        font-size: 13px;
+    }
+    .section .hero h1 {
+        font-size: 26px;
+    }
+    .section .hero img {
+        right: 8%;
+        width: 300px;
+    }
+    .section .google {
+        width: 52%;
+    }
+  }
+  @media (max-width: 360px){
+    .nav .join {
+        width: 53%;
+    }
+    .section .hero h1 {
+        font-size: 26px;
+    }
+    .section .hero img {
+        width: 280px;
+    }
+    .section .google {
+        width: 55%;
+    }
+  }
+  @media (max-width: 320px){
+    .nav .join {
+        width: 58%;
+    }
+    .section .hero h1 {
+        font-size: 20px;
+        line-height: 30px;
+    }
+    .section .hero img {
+        width: 225px;
+        top:5%;
+        right: 10%;
+    }
+    .section {
+        height: 85vh;
+    }
+    .section .google {
+        width: 60%;
+    }
+
+  }
